@@ -58,7 +58,7 @@ export default function Landing() {
           <Image src={dots} alt="dots2" disableSkeleton />
         </motion.div>
       </section>
-      <AboutUs />
+      {/* <AboutUs /> */}
     </main>
   );
 }
