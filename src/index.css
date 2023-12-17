@@ -1,0 +1,89 @@
+@import "normalize.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-base font-tt-lakes-neue tracking-wider  text-primary overflow-x-hidden;
+}
+
+@layer {
+  .icons {
+    @apply hover:opacity-50 transition text-primary hover:translate-y-2 hover:cursor-pointer;
+  }
+}
+
+/* Agrega estilos de animación para el border-bottom */
+.link-animation {
+  position: relative;
+  transition: all 0.3s ease; /* Puedes ajustar la duración y el efecto de transición según tus preferencias */
+}
+
+.link-animation::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 100%;
+  height: 1.2px; /* Altura del border-bottom */
+  background: linear-gradient(
+    to right,
+    #f19a3e,
+    transparent
+  ); /* Gradiente dorado */
+  transition: right 0.2s ease; /* Asegúrate de que la transición sea la misma que en el elemento padre */
+}
+
+.link-animation:hover::before {
+  right: 0;
+}
+
+@font-face {
+  font-family: "TT-Lakes-Neue";
+  src: url("assets/fonts/TT-Lakes-Neue-Trial-Expanded-Thin.woff") format("woff");
+  font-weight: 100; /* Peso para Thin */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TT-Lakes-Neue";
+  src: url("assets/fonts/TT-Lakes-Neue-Trial-Expanded-ExtraLight.woff")
+    format("woff");
+  font-weight: 200; /* Peso para ExtraLight */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TT-Lakes-Neue";
+  src: url("assets/fonts/TT-Lakes-Neue-Trial-Expanded-Light.woff")
+    format("woff");
+  font-weight: 300; /* Peso para Light */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TT-Lakes-Neue";
+  src: url("assets/fonts/TT-Lakes-Neue-Trial-Expanded-Regular.woff")
+    format("woff");
+  font-weight: 400; /* Peso para Regular */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TT-Lakes-Neue";
+  src: url("assets/fonts/TT-Lakes-Neue-Trial-Expanded-Bold.woff") format("woff");
+  font-weight: 700; /* Peso para Bold */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TT-Lakes-Neue";
+  src: url("assets/fonts/TT-Lakes-Neue-Trial-Expanded-ExtraBold.woff")
+    format("woff");
+  font-weight: 800; /* Peso para ExtraBold */
+  font-style: normal;
+}
+
+::-webkit-scrollbar {
+  @apply hidden;
+}
