@@ -7,7 +7,7 @@ const Layout = ({ children }) => {
   return (
     <Suspense fallback={<Loader />}>
       <NavBar />
-      <main>{children}</main>
+      <main className="relative overflow-x-hidden">{children}</main>
       <Footer />
     </Suspense>
   );

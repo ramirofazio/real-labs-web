@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 body {
-  @apply bg-base font-tt-lakes-neue tracking-wider  text-primary overflow-x-hidden;
+  @apply bg-base font-tt-lakes-neue tracking-wider  text-primary;
 }
 
 @layer {

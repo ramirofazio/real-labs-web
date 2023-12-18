@@ -11,7 +11,7 @@ import {
   Button,
   Image,
 } from "@nextui-org/react";
-import logo_small from "assets/logo_small.png";
+import circle from "assets/circle.png";
 
 export default function NavBar() {
   return (
@@ -38,7 +38,7 @@ export default function NavBar() {
     >
       <NavbarBrand>
         <Image
-          src={logo_small}
+          src={circle}
           className="w-20 hover:animate-spinner-ease-spin hover:cursor-none"
         />
       </NavbarBrand>

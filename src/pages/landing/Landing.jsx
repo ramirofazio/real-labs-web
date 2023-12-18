@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { Button, Image } from "@nextui-org/react";
+import { Button, Card, CardBody, Image, Divider } from "@nextui-org/react";
 import dots from "assets/dots.png"; // Asegúrate de que la ruta a las imágenes es correcta
-import logo_big from "assets/logo_big.png";
 import AboutUs from "../about/AboutUs";
 
 export default function Landing() {
@@ -27,7 +26,7 @@ export default function Landing() {
     <main>
       <section className="p-10 flex flex-col gap-10 items-center relative h-screen">
         <motion.div
-          className="absolute -left-96 w-[60%]"
+          className="absolute w-[130%]"
           style={{
             translateX: -offsetY * 0.5, // Ajusta la velocidad del efecto parallax aquí
             translateY: offsetY,
@@ -36,20 +35,33 @@ export default function Landing() {
           <Image src={dots} alt="dots" disableSkeleton />
         </motion.div>
 
-        <motion.div className="grid">
-          <Image src={logo_big} alt="logo" width={400} height={400} />
+        <motion.div className="grid place-items-center  gap-4 z-20">
+          <h1 className="text-white text-center text-3xl font-bold border-b-1 border-primary">
+            REAL LABS
+          </h1>
+          <Card className="bg-primary/20">
+            <CardBody>
+              <p className="text-xs font-bold font-quicksand text-white">
+                Innovación y Eficiencia en Cada Línea de Código. En Real,
+                transformamos desafíos complejos en soluciones tecnológicas
+                avanzadas. Impulsando el progreso, un proyecto a la vez.
+              </p>
+            </CardBody>
+          </Card>
+
           <Button
             variant="solid"
             color="secondary"
-            size="lg"
+            size="md"
             onClick={scrollToAboutUs}
+            className="font-bold mt-20 p-6"
           >
-            DESCUBRINOS
+            DESCUBRE NUESTRAS <br /> SOLUCIONES
           </Button>
         </motion.div>
 
         <motion.div
-          className="absolute -right-96 w-[60%]"
+          className="hidden absolute -right-[60%] w-[100%]"
           style={{
             translateX: offsetY * 0.5, // Ajusta la velocidad del efecto parallax aquí
             translateY: offsetY,
@@ -58,7 +70,7 @@ export default function Landing() {
           <Image src={dots} alt="dots2" disableSkeleton />
         </motion.div>
       </section>
-      {/* <AboutUs /> */}
+      <AboutUs />
     </main>
   );
 }
