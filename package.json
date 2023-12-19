@@ -11,7 +11,6 @@
   },
   "dependencies": {
     "@nextui-org/react": "^2.2.9",
-    "@splinetool/react-spline": "^2.2.6",
     "framer-motion": "^10.16.16",
     "normalize.css": "^8.0.1",
     "react": "^18.2.0",
