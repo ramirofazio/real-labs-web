@@ -7,6 +7,10 @@ body {
   @apply bg-base font-tt-lakes-neue tracking-wider  text-primary overflow-x-hidden;
 }
 
+p {
+  @apply font-quicksand font-extralight;
+}
+
 @layer {
   .icons {
     @apply hover:opacity-50 transition text-primary hover:translate-y-2 hover:cursor-pointer;
