@@ -17,6 +17,15 @@ p {
   }
 }
 
+.button-gradient {
+  background: linear-gradient(50deg, #59c6ba 0%, #f19a3e 50%, #59c6ba 100%);
+  font-weight: bold;
+}
+
+.button-gradient:hover {
+  transform: scale(1.05);
+}
+
 /* Agrega estilos de animación para el border-bottom */
 .link-animation {
   position: relative;

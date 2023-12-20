@@ -5,7 +5,6 @@ const NavBar = lazy(() => import("src/components/NavBar"));
 const Footer = lazy(() => import("src/components/Footer"));
 import circle from "assets/circle.png";
 import gradientCircle from "assets/gradientCircle.png";
-
 import dots from "assets/dots.png";
 
 const Layout = ({ children }) => {
@@ -27,16 +26,16 @@ const Layout = ({ children }) => {
         </div>
 
         <div className="grid place-items-center gap-6 px-4">
-          <h2 className="text-white border-b-1 border-secondary font-tt-lakes-neue text-sm sm:text-xl">
+          <h2 className="text-white border-b-1 border-secondary font-tt-lakes-neue font-bold text-sm sm:text-xl">
             WEB EN CONSTRUCCIÓN
           </h2>
-          <p className="text-white/50 z-20 text-sm sm:text-lg w-[60%] xl:w-[40%]">
+          <p className="text-white/50 z-20 text-sm sm:text-lg w-[60%] xl:w-[40%] font-semibold">
             Estamos afinando los detalles para brindarte una experiencia
-            completa. Si tienes una necesidad{" "}
+            completa. Si tenes una necesidad{" "}
             <spam className="text-secondary animate-pulse font-bold">
               URGENTE
             </spam>
-            , no dudes en contactarnos.
+            , no dudes en contactarnos por el medio que prefieras.
           </p>
         </div>
         <Image
@@ -55,17 +54,20 @@ const Layout = ({ children }) => {
           disableSkeleton
         />
 
-        <div className="grid place-items-center gap-2">
+        <div className="flex justify-center items-center gap-4">
           <Button
             as={Link}
             variant="solid"
             size="lg"
             color="secondary"
-            className="text-white font-bold"
+            className="button-gradient"
             href="https://forms.visme.co/formsPlayer/90p4rqzg-expert-blog-subscription"
           >
             ¡CONTACTANOS!
           </Button>
+          <a href="https://www.instagram.com/reallabs.dev" target="_blank">
+            <i className="icons ri-instagram-line button-gradient text-5xl !font-normal !bg-clip-text text-transparent" />
+          </a>
         </div>
       </main>
     </Suspense>
