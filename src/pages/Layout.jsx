@@ -25,11 +25,11 @@ const Layout = ({ children }) => {
           <p className="-mt-1 text-sm md:text-lg">SOLUCIONES TECNOLOGICAS</p>
         </div>
 
-        <div className="grid place-items-center gap-6 px-4">
+        <div className="grid place-items-center gap-6 px-4 z-20">
           <h2 className="text-white border-b-1 border-secondary font-tt-lakes-neue font-bold text-sm sm:text-xl">
             WEB EN CONSTRUCCIÓN
           </h2>
-          <p className="text-white/50 z-20 text-sm sm:text-lg w-[60%] xl:w-[40%] font-semibold">
+          <p className="text-white/50  text-sm sm:text-lg w-[60%] xl:w-[40%] font-semibold">
             Estamos afinando los detalles para brindarte una experiencia
             completa. Si tenes una necesidad{" "}
             <spam className="text-secondary animate-pulse font-bold">
@@ -54,7 +54,7 @@ const Layout = ({ children }) => {
           disableSkeleton
         />
 
-        <div className="flex justify-center items-center gap-4">
+        <div className="flex justify-center items-center gap-4 z-20">
           <Button
             as={Link}
             variant="solid"
